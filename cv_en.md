@@ -1,7 +1,7 @@
 # Cristhian Rios
 
 **Senior PHP Developer**  
-📍 Santander, Colombia  
+📍 Medellin, Colombia  
 📞 +57 3015058204  
 📧 [coriosdev@gmail.com](mailto:coriosdev@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/coriosdev)  
