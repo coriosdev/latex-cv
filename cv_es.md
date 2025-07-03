@@ -62,7 +62,7 @@ Desarrollador de software con **9 años de experiencia especializada en desarrol
 ---
 
 Almicava/Integ.ro  
-**Fullstack Developer (freelance)**  
+**Fullstack Developer**  
 📍 Medellín | 📆 Octubre 2017 \- Febrero 2019
 
 - Desarrollo de sitios web personalizados en WordPress, incluyendo creación de temas, plugins y optimización de rendimiento.

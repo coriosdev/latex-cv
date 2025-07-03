@@ -34,17 +34,14 @@ Software developer with **9 years of experience specialized in backend developme
 📍 Medellín | 📆 December 2021 – November 2024
 
 - **Client: Disney Parks**:
-
   - Gathered and analyzed functional requirements directly with stakeholders, defining scopes and collaborating in technical planning.
   - Extended and improved backoffice modules for a POS system based on microservices architecture, including new sales and reporting tools.
   - Remediated security vulnerabilities and applied hardening measures following OWASP best practices.  
     **Technologies:** PHP 8, CodeIgniter 3, React.js, jQuery, MySQL, microservices
-
 - **Client: Singular Bank**:
-
   - Developed a multi-currency system integration for the customers application, allowing currency operations and balance display.
   - Built a backoffice system for check issuance and management using PHP and JavaScript, including dynamic forms and automatic validations.  
-    **Technologies:** PHP 7, Symfony 3, React.js, jQuery, MySQL
+    **Technologies:** PHP 7, Symfony 3, React.js, jQuery, MySQL.
 
 ---
 
@@ -63,7 +60,7 @@ Software developer with **9 years of experience specialized in backend developme
 
 ### Almicava / Integ.ro
 
-**Fullstack Developer (Freelance)**  
+**Fullstack Developer**  
 📍 Medellín | 📆 October 2017 – February 2019
 
 - Built custom WordPress websites including theme and plugin development, with performance optimization.
