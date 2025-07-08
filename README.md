@@ -14,7 +14,6 @@ This project is a personal CV generator that uses LaTeX templates (with EJS logi
 
 - `data/` — YAML files with your CV data (e.g., `cv-en.yml`, `cv-es.yml`).
 - `templates/render-cv/` — Main EJS+LaTeX templates (e.g., `template.tex`).
-- `templates/std/` — Alternative/classic LaTeX templates and styles.
 - `scripts/` — Node.js scripts for generating and rendering the CV.
 - `build/` — Output directory for generated `.tex` and `.pdf` files (ignored by git).
 
