@@ -1,0 +1,246 @@
+name: Cristhian Rios
+tagline: Desarrollador PHP Senior
+location: Medellín, Colombia
+phone: "+57 3015058204"
+email: coriosdev@gmail.com
+linkedin: https://www.linkedin.com/in/coriosdev
+github: https://github.com/coriosdev
+lastUpdate: "Jul 2025"
+fontSize: 9
+
+profile: >
+  Desarrollador de software con 9 años de experiencia especializado en desarrollo backend con PHP.
+  Sólidos conocimientos en MySQL, JavaScript y herramientas modernas como Git, Docker y React.js.
+  Experiencia en aplicaciones monolíticas y en la transición a arquitecturas modernas.
+  Orientado a resultados, trabajo en equipo, buenas prácticas de código y metodologías ágiles.
+
+technical_skills:
+  languages: ["PHP (avanzado)", "JavaScript (avanzado)", "SQL", "HTML5"]
+  frameworks:
+    ["Laravel", "CodeIgniter", "React.js (intermedio)", "Angular (básico)"]
+  databases: ["MySQL (avanzado)", "PostgreSQL (básico)"]
+  devops:
+    ["Docker (intermedio)", "Docker Compose (intermedio)", "Linux (intermedio)"]
+  tools: ["Git (avanzado)", "Composer", "Node.js (intermedio)", "REST APIs"]
+  methodologies: ["Scrum", "TDD (intermedio)"]
+
+experience:
+  - company: Globant
+    role: Desarrollador PHP Senior
+    location: Medellín, Colombia (remoto)
+    period: Dic 2021 - Nov 2024
+    clients:
+      - client: Disney Parks
+        bullets:
+          - Lideré la definición de alcance y la planificación técnica junto a los stakeholders para módulos de backoffice POS.
+          - Desarrollé extensiones basadas en microservicios para herramientas de reportes, mejorando el acceso a datos en tiempo real.
+          - Mitigué riesgos de seguridad remediando vulnerabilidades críticas e implementando buenas prácticas OWASP.
+          - Contribuí a la optimización del pipeline CI/CD en un entorno de despliegue continuo de alta demanda.
+        technologies:
+          - PHP 8
+          - CodeIgniter 3
+          - React.js
+          - jQuery
+          - MySQL
+          - microservicios
+      - client: Singular Bank
+        bullets:
+          - Integré un sistema multimoneda en una app bancaria de cara al cliente, permitiendo cambio de divisa y visualización de saldos en tiempo real.
+          - Desarrollé un módulo de backoffice dinámico para emisión de cheques, con validación en tiempo real y automatización de formularios.
+          - Colaboré con equipos multidisciplinarios para asegurar rendimiento, seguridad y cumplimiento en el sector fintech.
+        technologies:
+          - PHP 7
+          - Symfony 3
+          - React.js
+          - jQuery
+          - MySQL
+  - company: Cognox SAS
+    role: Desarrollador Fullstack
+    location: Medellín, Colombia (híbrido)
+    period: Ago 2019 - Sep 2021
+    bullets:
+      - Diseñé arquitectura backend escalable y optimicé bases de datos MySQL para sistemas institucionales.
+      - Refactoricé aplicaciones legacy para habilitar desarrollo modular y autenticación centralizada.
+      - Construí APIs REST e implementé lógica de negocio compleja para plataformas del sector público bajo restricciones regulatorias.
+      - Mejoré la entrega ágil participando activamente en planificación de sprints, estimaciones y daily meetings.
+    technologies:
+      - PHP 7/8
+      - Laravel
+      - Docker
+      - MySQL
+      - Jenkins
+  - company: Almicava / Integ.ro
+    role: Desarrollador Fullstack
+    location: Medellín, Colombia
+    period: Oct 2017 - Feb 2019
+    bullets:
+      - Desarrollé y optimicé sitios WordPress a medida, incluyendo desarrollo de plugins y temas con ajuste de performance.
+      - Refactoricé y modularicé un CMS educativo para mejor mantenibilidad y escalabilidad.
+      - Construí un CMS integrado con REST usando Node.js y React.js, orientado a la entrega eficiente de contenido educativo.
+      - Creé un plugin de mapas interactivos para apoyar aprendizaje gamificado en módulos de geografía.
+    technologies:
+      - PHP 7
+      - WordPress
+      - JavaScript
+      - jQuery
+      - Node.js
+      - React.js
+  - company: GlobalPro GPS SAS
+    role: Desarrollador Fullstack (Freelance)
+    location: Bucaramanga, Colombia
+    period: Oct 2017 - Feb 2019
+    bullets:
+      - Dearrollé un sistema de despacho y monitoreo de buses intermunicipales en tiempo real integrado con datos GPS.
+      - Desarrollé servicios backend con Laravel e interfaces interactivas con Backbone.js y Bootstrap.
+      - Automaticé el registro de tiempos y la verificación de paradas mediante datos de GPS en tiempo real.
+      - Lideré el ciclo completo del proyecto desde arquitectura y desarrollo hasta entrega y despliegue al cliente.
+    technologies:
+      - PHP 7/8
+      - Laravel
+      - JavaScript
+      - Backbone.js
+      - Docker
+      - MySQL
+  - company: Somos Voodoo / PVS Agencia
+    role: Líder Desarrollador Full Stack
+    location: Bucaramanga, Colombia
+    period: Mar 2014 - Oct 2017
+    bullets:
+      - Lideré el desarrollo end-to-end de aplicaciones web a medida para marketing e I+D.
+      - Construí plataformas de generación de leads integradas con Zoho CRM y flujos automatizados vía Webhooks.
+      - Diseñé y desarrollé herramientas internas de gestión de proyectos I+D para seguimiento de hitos y contribuciones de equipo.
+      - Gestioné la planificación técnica, levantamiento de requerimientos e implementación full stack en múltiples proyectos.
+      - Mentoricé desarrolladores e introduje control de versiones y flujos de trabajo, mejorando la velocidad de entrega y calidad de código del equipo.
+    technologies:
+      - PHP 5/7
+      - Laravel
+      - JavaScript
+      - AngularJS
+      - MySQL
+
+projects:
+  - name: Simplifica
+    role: Desarrollador Backend
+    company: Cognox SAS
+    description: >
+      Lideré el desarrollo backend de un sistema de trazabilidad y seguimiento de alimentos para animales, implementado por el Instituto Colombiano Agropecuario (ICA).
+      Diseñé la arquitectura principal del sistema y una base de datos relacional normalizada para soportar el ingreso de grandes volúmenes de datos.
+      Construí APIs seguras y servicios para procesar datos agropecuarios provenientes de múltiples entidades y regiones.
+    technologies:
+      ["PHP", "Laravel", "MySQL", "GraphQL", "Diseño de Bases de Datos"]
+
+  - name: Simplifica 2
+    role: Desarrollador Backend
+    company: Cognox SAS
+    description: >
+      Desarrollé un conjunto modular de aplicaciones basado en la plataforma Simplifica con un sistema unificado de gestión de usuarios.
+      Implementé autenticación centralizada y realicé refactorización de módulos heredados para garantizar la interoperabilidad del sistema.
+      Mejoré la mantenibilidad y escalabilidad mediante el rediseño de servicios backend y modelos de datos.
+    technologies:
+      [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "GraphQL",
+        "Autenticación Centralizada",
+        "Arquitectura Modular",
+      ]
+
+  - name: Despachador de Rutas – GlobalPro GPS
+    role: Desarrollador Full Stack (Freelance)
+    company: GlobalPro GPS SAS
+    description: >
+      Diseñé y desarrollé una plataforma de despacho y monitoreo de buses intermunicipales integrada con datos GPS.
+      Construí dashboards, REST APIs y flujos de datos para rastrear ubicaciones de vehículos y cumplimiento de itinerarios.
+      Entregué una solución escalable y lista para producción que permitió retener al principal cliente de la empresa y atraer nuevos contratos corporativos.
+    technologies:
+      [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Backbone.js",
+        "Bootstrap",
+        "Integración con GPS",
+        "API REST",
+      ]
+
+  - name: Leadhunters
+    role: Desarrollador Full Stack
+    company: Somos Voodoo
+    description: >
+      Diseñé e implementé un sistema de captura de leads digitales integrado con formularios de Facebook, formularios embebidos y landing pages.
+      Desarrollé conectores y automatizaciones utilizando Zoho CRM, Webhooks y procesos en segundo plano para la entrega y procesamiento de leads.
+      Construí dashboards administrativos para monitorear el rendimiento de campañas de marketing y análisis de datos.
+    technologies:
+      [
+        "Laravel",
+        "PHP",
+        "OAuth2",
+        "JavaScript",
+        "AngularJS",
+        "Zoho CRM",
+        "Webhooks",
+        "Facebook API",
+        "Integración con CRM",
+      ]
+
+  # - name: Seguimiento de Proyectos I+D – Levapan
+  #   role: Desarrollador Full Stack
+  #   company: Somos Voodoo
+  #   description: >
+  #     Construí una herramienta interna para el seguimiento de proyectos colaborativos de investigación y desarrollo, incluyendo planificación de hitos, gestión documental y control de roles de usuario.
+  #     Desarrollé interfaces intuitivas y lógica backend para la gestión del estado de proyectos y la coordinación de equipos.
+  #     Mejoré la visibilidad del avance de proyectos para los interesados y optimicé los reportes internos.
+  #   technologies:
+  #     [
+  #       "Laravel",
+  #       "PHP",
+  #       "AngularJS",
+  #       "MySQL",
+  #       "Control de Acceso Basado en Roles",
+  #     ]
+
+languages:
+  - language: Español
+    level: Nativo
+  - language: Inglés
+    level: B2+
+
+hobbies:
+  - name: Leer Ciencia Ficción
+    icon: faBook
+  - name: Películas
+    icon: faFilm
+  - name: Gym
+    icon: faDumbbell
+  - name: Coding
+    icon: faCode
+
+education:
+  - degree: Tecnólogo en Diseño y Administración de Sistemas
+    institution: Unidades Tecnológicas de Santander
+    location: Bucaramanga, Colombia
+    start_date: Sep 2000
+    end_date: May 2005
+    description: >
+      Programa integral en diseño, administración y desarrollo de software.
+      Enfoque en aplicaciones prácticas y resolución de problemas reales.
+      Equivalente a un título técnico de 3 años enfocado en diseño de sistemas informáticos.
+
+labels:
+  professional_profile: "Perfil"
+  technical_skills: "Skills"
+  languages: "Lenguajes"
+  frameworks: "Frameworks"
+  databases: "Bases de datos"
+  devops: "DevOps"
+  tools: "Herramientas"
+  methodologies: "Metodologías"
+  education: "Educación"
+  experience: "Experiencia"
+  projects: "Proyectos Destacados"
+  company: "Empresa"
+  role: "Rol"
+  technologies: "Tecnologías"
+  hobbies: "Hobbies"
+  lastUpdate: "Última actualización"
