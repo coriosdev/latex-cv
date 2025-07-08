@@ -1,0 +1,16 @@
+{
+  "name": "cv-generator-ejs",
+  "version": "1.0.0",
+  "description": "ATS-friendly CV generator using LaTeX, YAML and EJS templates",
+  "type": "module",
+  "main": "generator.js",
+  "scripts": {
+    "build": "node generator.js data/cv-en.yml templates/std template.tex build/"
+  },
+  "author": "Cristhian Rios",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "js-yaml": "^4.1.0"
+  }
+}
