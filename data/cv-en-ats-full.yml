@@ -1,0 +1,235 @@
+name: Cristhian Rios
+tagline: Senior Full-stack Developer
+location: Medellin, Colombia
+phone: "+57 3015058204"
+email: coriosdev@gmail.com
+linkedin: https://www.linkedin.com/in/coriosdev
+github: https://github.com/coriosdev
+lastUpdate: "Jul 2025"
+fontSize: 7
+
+profile: >
+  With over nine years as a full-stack developer, I blend deep expertise in PHP and Laravel (v5.6→v12) with strong JavaScript skills (Node.js, React.js) to deliver end-to-end, high-performance solutions. As a freelance consultant, I modernized GlobalPro's legacy platform by migrating it to Laravel 11, rolled out comprehensive automated testing, and built a Node.js alert system for financial markets. At Globant (Disney Parks), I designed and developed secure, scalable APIs to OWASP standards and collaborated on intuitive front-end interfaces. I'm eager to join a senior team and drive real impact through clean-architecture solutions.
+
+technical_skills:
+  - category: Languages & Frameworks
+    skills:
+      - "PHP (Laravel v5.6→v12, CodeIgniter 3)"
+      - "JavaScript (Node.js)"
+      - "Typescript (React.js, Angular)"
+  - category: Architecture & Patterns
+    skills: [Clean/Hexagonal, DDD, CQRS, Unit-of-Work, Repository, DTOs]
+  - category: DevOps & Cloud
+    skills:
+      ["Docker", "Docker Compose", "Kubernetes (Minikube)", "GitHub Actions"]
+  - category: Databases & Cache
+    skills: [MySQL/MariaDB, Redis, PostgreSQL]
+  - category: Testing & Quality
+    skills:
+      [
+        "TDD/BDD (PHPUnit, Pest)",
+        "Static Analysis (PHPStan, ESLint)",
+        "Code Reviews",
+        "Version Control (Git)",
+      ]
+  - category: APIs & Security
+    skills: ["REST (versioning, HATEOAS)", "JWT/OAuth2", "OWASP"]
+
+experience:
+  - title: "Freelance Fullstack Consultant"
+    period: "Dec 2024 - Jul 2025"
+    clients:
+      - title: "GlobalPro (repeat engagement)"
+        bullets:
+          - "Migrated core application from Laravel 5.6→11, refactoring controllers and models to align with modern conventions."
+          - "Introduced PHPUnit test suite, elevating code reliability."
+          - "Developed a new GPS tracking algorithm that increased route precision by refining coordinate processing and improving real-time update accuracy."
+      - title: "Personal Project"
+        bullets:
+          - "Built a Node.js alarm system for synthetic markets on Deriv: consumes live data, computes indicators (RSI, EMA), and pushes alerts via Telegram and email."
+    technologies:
+      ["Laravel 5.6-11", PHP, MySQL, PHPUnit, Node.js, WebSocket, Docker, MySQL]
+  - title: "Senior PHP Developer at Globant"
+    period: "Dec 2021 - Nov 2024"
+    clients:
+      - title: "Disney Parks"
+        bullets:
+          - "Improved the consistency and reliability of the menu item automation system, ensuring stable workflows and eliminating manual errors."
+          - "Implemented traceability in automatic user creation to comply with US regulations, ensuring auditable records and full control."
+          - "Led a critical vulnerability patching project, enhancing system security and meeting OWASP standards."
+      - title: "Singular Bank"
+        bullets:
+          - "Developed multi-currency integration for the banking app, enabling real-time currency exchange and balance inquiries."
+          - "Created a dynamic check-issuance module with interactive validations, improving user experience."
+    technologies:
+      [
+        "PHP 7/8",
+        "MySQL",
+        "Codeigniter 3",
+        "Symfony 3",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "TDD",
+        "React JS",
+        "Clean Architecture",
+        "OpenAPI",
+        "API REST",
+        "Async Job Processing",
+        "Web Security",
+        "SQL Injection Prevention",
+        "NPM Audit",
+      ]
+  - title: "Fullstack Developer at Cognox SAS"
+    period: "Aug 2019 - Sep 2021"
+    bullets:
+      - "Designed a modular backend architecture to support continuous growth and rapid changes for the Animal Feed Monitoring and Control System (government project)."
+      - "Built robust RESTful APIs to meet regulatory requirements in the public sector."
+      - "Transformed legacy code into modern components, improving maintainability and team agility."
+    technologies:
+      [
+        "PHP 7/8",
+        "MySQL",
+        "GraphQL",
+        "Laravel 6/7/8",
+        "Docker",
+        "React js",
+        "Microfrontend",
+      ]
+  - title: "Fullstack Developer at Almicava / Integ.ro"
+    period: "Oct 2017 - Feb 2019"
+    bullets:
+      - "Designed and implemented custom WordPress plugins and themes, enhancing user experience and optimizing performance."
+      - "Collaborated on building an educational CMS for NISL instructors using Node.js and React.js, enabling scalable content extension and customization."
+      - "Optimized database queries for high-volume content, significantly reducing search response times."
+    technologies:
+      [
+        "WordPress",
+        "PHP7",
+        "MySQL",
+        "query optimization",
+        "CSS3",
+        "HTML5",
+        "jQuery",
+        "JavaScript",
+        "JWT",
+        "Node.js",
+        "React.js",
+      ]
+  - title: "Freelance Fullstack Developer for GlobalPro GPS SAS"
+    period: "Oct 2017 - Feb 2019"
+    bullets:
+      - "Implemented a real-time dispatch and monitoring system for bus fleets, ensuring continuous tracking."
+      - "Automated GPS data capture and verification, reducing manual operational workload."
+      - "Managed the entire project lifecycle from design to final deployment."
+    technologies:
+      ["PHP 7", "Laravel", "Backbone.js", "HTML5", "CSS3", "Linux", "Traccar"]
+  - title: "Lead Full Stack Developer at Somos Voodoo / PVS Agencia"
+    period: "Mar 2014 - Oct 2017"
+    bullets:
+      - "Led the end-to-end development of marketing platforms, driving lead generation."
+      - "Integrated Zoho CRM via webhooks, optimizing data flow and lead management."
+      - "Developed an internal project management tool suite for Levapan, improving collaboration and tracking."
+      - "Mentored the team in version control and best practices, raising code quality."
+    technologies:
+      [
+        "Laravel",
+        "MySQL",
+        "AngularJS",
+        "Webhooks",
+        "Zoho CRM",
+        "Git",
+        "code reviews",
+      ]
+
+projects:
+  - name: "Disney Sales Point (DSP) - Disney Parks (USA)"
+    role: "Senior PHP Developer"
+    company: "Globant"
+    description: >
+      I was part of the maintenance and enhancement team for the DSP system, the new POS platform designed to replace legacy systems for all Disney parks in the US. The system centralizes operations in restaurants (quick and table service) and souvenir shops, unifying processes in a modern, scalable solution with high operational impact.
+    technologies:
+      [
+        "PHP 8",
+        "CodeIgniter 3",
+        "React.js",
+        "MySQL",
+        "API REST",
+        "Async Job Processing",
+      ]
+  - name: "Simplifica - Colombian Institute of Agriculture (ICA)"
+    role: "Backend Developer"
+    company: "Cognox SAS"
+    description: >
+      Led the backend development of the ICA traceability platform, creating secure APIs to meet government standards and a normalized database to process large volumes of data, as well as implementing integrations with multiple official entities.
+    technologies:
+      [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "GraphQL",
+        "Database Design",
+        "SOAP",
+        "REST APIs",
+        "React js",
+        "Microfrontend",
+      ]
+  - name: "Despachador de Rutas - GlobalPro GPS"
+    role: "Full Stack Developer"
+    description: >
+      I designed and developed a real-time dispatch and monitoring platform for intercity buses, integrating GPS data to track locations and schedule compliance. The delivered scalable solution enabled the retention of the main client and facilitated the signing of new corporate contracts.
+    technologies:
+      [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Backbone.js",
+        "Bootstrap",
+        "GPS Integration",
+        "API REST",
+      ]
+languages:
+  - language: Spanish
+    level: Native
+  - language: English
+    level: B2+
+
+hobbies:
+  - name: Reading Sci-Fi
+    icon: faBook
+  - name: Movies
+    icon: faFilm
+  - name: Training
+    icon: faDumbbell
+  - name: Coding
+    icon: faCode
+
+education:
+  - degree: Associate Degree in Systems Design and Administration
+    institution: Unidades Tecnológicas de Santander
+    location: Bucaramanga, Colombia
+    start_date: Sep 2000
+    end_date: May 2005
+    description: >
+      Comprehensive program covering systems design, administration, and software development.
+      Focused on practical applications and real-world problem solving.
+      Equivalent to a 3-year technical degree focused on IT systems design.
+
+labels:
+  professional_profile: "Professional Summary"
+  technical_skills: "Key Skills & Technologies"
+  languages: "Languages"
+  languages2: "Languages"
+  frameworks: "Frameworks"
+  databases: "Databases"
+  devops: "DevOps"
+  tools: "Tools"
+  methodologies: "Methodologies"
+  education: "Education"
+  experience: "Experience"
+  projects: "Highlighted Projects"
+  company: "Company"
+  role: "Role"
+  technologies: "Technologies"
+  hobbies: "Hobbies"
+  lastUpdate: "Last Update"

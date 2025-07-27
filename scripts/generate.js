@@ -11,6 +11,15 @@ function escapeLatex(str = "") {
   return str.replace(/([%&$#_{}\\])/g, "\\$1");
 }
 
+function inlineList(values, separator, ending) {
+  return (
+    values
+      .map((item) => item.trim())
+      .filter((item) => item !== "")
+      .join(separator) + (ending ? ending : "")
+  );
+}
+
 async function renderCV(
   yamlPath,
   templateDir,
@@ -33,12 +42,17 @@ async function renderCV(
       const templateContent = await fs.readFile(srcPath, "utf8");
       const rendered = ejs.render(
         templateContent,
-        { ...data, e: escapeLatex }, // Spread data at top level for direct access
+        { ...data, e: escapeLatex, inlineList }, // Spread data at top level for direct access
         { filename: srcPath }
       );
       await fs.writeFile(destPath, rendered, "utf8");
     } else {
-      await fs.copyFile(srcPath, destPath); // Copy images, .cls, etc.
+      const srcStats = await fs.stat(srcPath);
+      if (srcStats.isDirectory()) {
+        await fs.cp(srcPath, destPath, { recursive: true }); // Copy directories recursively
+      } else {
+        await fs.copyFile(srcPath, destPath); // Copy individual files
+      }
     }
   }
 

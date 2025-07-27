@@ -37,13 +37,14 @@
 \usepackage{tikz}
 \usepackage[none]{hyphenat} % Disable all hyphenation
 \usepackage{xcolor}
+\usepackage{multicol} % For multi-column adjustments
+\usepackage{balance} % To balance columns on the last page
 
 % Ensure that generate pdf is machine readable/ATS parsable:
 \definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
 % \definecolor{primaryColor}{RGB}{35, 41, 96} % define primary color
 \definecolor{accentColor}{RGB}{46, 106, 142} % define primary color
 
-% Define blending ratio for subtitle color (70% accentColor, 30% white)
 \colorlet{subtitleColor}{accentColor!70!white}
 
 \definecolor{baseTextColor}{RGB}{10, 25, 47} % define base text color
@@ -62,7 +63,7 @@
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
-\setlength{\columnsep}{0.15cm} % set column seperation
+\setlength{\columnsep}{0.5cm} % Set column separation
 \makeatletter
 \let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
 \makeatother
@@ -204,19 +205,17 @@
 \newcommand{\smallit}[1]{\textit{\footnotesize #1}}
 
 
-\begin{document}
-    \fontsize{9pt}{11pt}\selectfont
-    \color{baseTextColor}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{}
+% Define the \sectiontwocol command to allow sections to span both columns
+\newcommand{\sectiontwocol}[1]{
+    \twocolumn[\section{#1}]
+}
 
-    \placelastupdatedtext
+\begin{document}
+    \fontsize{9pt}{10pt}\selectfont
+    \color{baseTextColor}
+
+    % Avatar on the left, name and info on the right
     \begin{header}
-        % Avatar on the left, name and info on the right
         \begin{minipage}[c]{0.18\textwidth}
             \centering
             \avatar[2.5cm]{./avatar.jpg}
@@ -237,7 +236,7 @@
 
     % Professional Profile Section (EJS)
     
-    \section{<%- labels.professional_profile %>}
+    \sectiontwocol{<%- labels.professional_profile %>}
         
         \begin{onecolentry}
             <%- profile %>
@@ -258,7 +257,7 @@
     \section{<%- labels.experience %>}
     <% experience.forEach(function(exp, idx) { %>
         \begin{onecolentry}
-            \subtitle{<%- e(exp.title) %>} \phantom{n}\textbar\phantom{n} \smallit{<%- e(exp.period) %>}
+            \subtitle{<%- e(exp.title) %>} - \smallit{<%- e(exp.period) %>}
             <% if (exp.bullets) { %>
                 \begin{highlights}
                     <% exp.bullets.forEach(function(bullet) { %>
@@ -289,16 +288,16 @@
 
     % Projects Section (EJS)
 
-    <% if(projects && projects.length > 0) {%>
+    <% projects && projects.forEach(function(project, idx) { %>
         \section{<%- labels.projects %>}
-        <% projects && projects.forEach(function(project, idx) { %>
-            \begin{twocolentrypro}{
-                \smallit{<%-  e(project.company) ??  '' %>}
-                }
-                \subtitle{<%- e(project.name) %>} \phantom{n}\textbar\phantom{n} \textit{<%- e(project.role) %>}
-            \end{twocolentrypro}
-            \begin{onecolentry}
-                \vspace{0.3 cm}
+        \begin{twocolentrypro}{
+            \smallit{<%- e(project.company) %>}
+            }
+            \subtitle{<%- e(project.name) %>} \;\textbar\;  \textit{<%- e(project.role) %>}            
+        \end{twocolentrypro}
+        \begin{onecolentry}
+            \vspace{1\baselineskip}
+            % \begin{adjustwidth}{0.4cm}{}
                 <% if (project.description) { %>
                     <%- e(project.description) %>
                 <% } %>
@@ -306,40 +305,44 @@
                     \textbf{<%- labels.technologies %>:} <%- e(project.technologies.join(', ')) %>.
                 <% } %>
                 <% if (idx !== projects.length - 1) { %>
-                    \hdivider
+                    \vspace{1\baselineskip}
                 <% } %>
-            \end{onecolentry}
-        
-        <% }); %>
-    <% } %>
+            % \end{adjustwidth}
+        \end{onecolentry}
+       
+    <% }); %>
 
     % Education Section (EJS)
     
     \section{<%- labels.education %>}
     <% education.forEach(function(edu, idx) { %>
-        \begin{twocolentry}{
-            \smallit{<%- e(edu.location) %>}
+        \begin{adjustwidth}{0.5 cm}{}
+            \begin{twocolentry}{
+                \smallit{<%- e(edu.location) %>}
             }
-            \subtitle{<%- e(edu.institution) %>}\\
-            \textit{<%- e(edu.degree) %>}\\
-        \end{twocolentry}
-        \begin{onecolentry}
-            <%- e(edu.description) %>
-        \end{onecolentry}
+                \subtitle{<%- e(edu.institution) %>}\\
+                \textit{<%- e(edu.degree) %>}\\
+            \end{twocolentry}
+            \begin{onecolentry}
+                <%- e(edu.description) %>
+            \end{onecolentry}
+        \end{adjustwidth}
     <% }); %>
 
     % Languages Section (EJS)
     
     \section{<%- labels.languages2 %>}
-    \begin{onecolentry}
+    \begin{adjustwidth}{0.5 cm}{}
     <% languages.forEach(function(lang, idx) { %> \textbf{<%- lang.language %>}: <%- lang.level %><% if (idx !== languages.length - 1) { %>, <% } else { %>. <%} %><% }); %>
-    \end{onecolentry}
+    \end{adjustwidth}
 
     % Hobbies Section (EJS)
 
     \section{<%- labels.hobbies %>}
-    \begin{onecolentry}
+    \begin{adjustwidth}{0.5 cm}{}
     <% hobbies.forEach(function(hobby, idx) { %>\csname <%- hobby.icon %>\endcsname~<%- hobby.name %><% if (idx !== hobbies.length - 1) { %>, <% } else { %>. <%} %><% }); %>
-    \end{onecolentry}
+    \end{adjustwidth}
 
+    % Balance columns on the last page
+    \balance
 \end{document}
